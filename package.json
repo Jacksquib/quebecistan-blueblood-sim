@@ -1,0 +1,24 @@
+{
+  "name": "quebecistan-blueblood-sim",
+  "version": "0.0.1",
+  "description": "Building the game:",
+  "main": "out/html/index.html",
+  "scripts": {
+    "dendrynexus": "dendrynexus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Jacksquib@github.com/Jacksquib/quebecistan-blueblood-sim.git"
+  },
+  "keywords": [],
+  "author": "Jacksquib",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jacksquib/quebecistan-blueblood-sim/issues"
+  },
+  "homepage": "https://github.com/Jacksquib/quebecistan-blueblood-sim",
+  "dependencies": {
+    "dendrynexus": "github:aucchen/dendrynexus",
+    "parliament-svg": "^3.0.0"
+  }
+}
