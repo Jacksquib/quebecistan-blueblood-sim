@@ -1,6 +1,22 @@
 title: Scene One
 new-page: true
-tags: top
+go-to: post_event if started = 1; start_menu if started = 0
 
-This is the first scene of "Dendry-starter-pack". From this point, you can add
-further scenes and choices to flesh out your game.
+@start_menu
+new-page: true
+go-to: start_menu_2
+
+= Social Democracy: Petrograd 1917 - An Alternate History
+
+[img]https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/panels/00001.gif[/img]
+
+Bill's the name all the coolfish dig. It's high time for playtime down in CAPITOL KRILL.
+
+Or, atleast it would be if not for Bush's succession to the THRONE OF PSYCHIC PRINCESSES. The CLOCK OF DOOM falls one step closer to the ETERNAL DARK and promptly collapses into a singularity of despair. Oh man! Not good...
+
+But before you can stop him, you need a handle! Though it was 13.25 PREZYEARS ago Bill was given life, it is only today he will be given a username.
+
+@start_menu_2
+
+- @start: Start game
+- @credits: Credits
