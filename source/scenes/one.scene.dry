@@ -1,10 +1,5 @@
 title: Scene One
 new-page: true
-go-to: post_event if started = 1; start_menu if started = 0
-
-@start_menu
-new-page: true
-go-to: start_menu_2
 
 = Social Democracy: Petrograd 1917 - An Alternate History
 
@@ -15,8 +10,3 @@ Bill's the name all the coolfish dig. It's high time for playtime down in CAPITO
 Or, atleast it would be if not for Bush's succession to the THRONE OF PSYCHIC PRINCESSES. The CLOCK OF DOOM falls one step closer to the ETERNAL DARK and promptly collapses into a singularity of despair. Oh man! Not good...
 
 But before you can stop him, you need a handle! Though it was 13.25 PREZYEARS ago Bill was given life, it is only today he will be given a username.
-
-@start_menu_2
-
-- @start: Start game
-- @credits: Credits
