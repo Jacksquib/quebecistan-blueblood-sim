@@ -4,10 +4,37 @@ tags: top
 
 = Prezstuck 2000: The Reds Strike Back!
 
-[img]https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/panels/00001.gif[/img]
+<img src="img/preztest.gif">
 
 Bill's the name all the coolfish dig. It's high time for playtime down in CAPITOL KRILL.
 
 Or, atleast it would be if not for Bush's succession to the THRONE OF PSYCHIC PRINCESSES. The CLOCK OF DOOM falls one step closer to the ETERNAL DARK and promptly collapses into a singularity of despair. Oh man! Not good...
 
 But before you can stop him, you need a handle! Though it was 13.25 PREZYEARS ago Bill was given life, it is only today he will be given a username.
+
+- @prez1
+- @prez2
+- @prez3
+
+@prez1
+title: Bill: Get handle
+subtitle: This will improve your standing among the new middle class.
+choose-if: 1 = 0
+unavailable-subtitle: We do not have majority support for this policy.
+goto: root
+
+GLORK! 1
+
+@prez2
+title: Bill: Trip into missile gap and become unresponsive
+subtitle: Many such cases!
+goto: root
+
+GLORK! 2
+
+@prez3
+title: Bill: Re-classify International Food Court as thought-terrorist organization
+subtitle: This is the <span style="color: #00FF00;">**CORRECT**</span> choice! Eat and enjoy. Eat and enjoy. Eat and enjoy
+goto: root
+
+GLORK! 3
