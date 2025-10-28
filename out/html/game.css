@@ -24,7 +24,7 @@ a {
 
 nav {
   padding-top: 0 !important; 
-  background-color: #5a5a5a;
+  background-color: #000;
 	font-family: "arial";
 	font-weight: bold;
 	font-size: x-small;
@@ -83,9 +83,9 @@ body {
   --card-border-color: #4c4c4c;
   --card-bg-color: #3f3f3f;
 	*/
-	--bg-color: #000034;
-  --border-color: #000034;
-  --content-bg-color: #000034;
+	--bg-color: #000000;
+  --border-color: #000000;
+  --content-bg-color: #000000;
   --text-color: #fff;
   --link-color: #0000ff;
   --link-hover-color: rgba(255, 255, 255, 0.06);
@@ -122,7 +122,7 @@ body {
 	font-size: 14px;
 	width: 676px;
   margin-left: auto;
-	min-height: 1000px;
+	height: 100vh;
 }
 #container {
   margin: 0 auto 20px;
@@ -134,16 +134,16 @@ body {
 	word-break: break-word;
   border-left: 8px #000 solid;
 	margin-bottom: 8px !important;
-	background-color: #000;
+	background-color: #000 !important;
   color: #fff;
-	min-height: 300px;
+	height: 100vh;
 }
 #content {
   font-size: 12px;
 	text-align: center;
 	margin-bottom: 14px;
-  background-color: var(--content-bg-color);
-	min-height: 1000px;
+  background-color: #000 !important;
+	color: #fff;
 }
 #content>span>br:first-child {
 	display: none;
@@ -155,12 +155,11 @@ body {
 #tools_wrapper {
 	position: absolute;
 	display: table;
-  top: 126px;
   left: 0;
-  bottom: 130px;
   width: 250px;
 	background-color: #000;
   border: solid #000;
+	color: #fff;
 }
 
 /* bottom */
