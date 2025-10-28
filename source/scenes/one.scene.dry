@@ -21,20 +21,20 @@ title: Bill: Get handle
 subtitle: This will improve your standing among the new middle class.
 choose-if: 1 = 0
 unavailable-subtitle: We do not have majority support for this policy.
-goto: root
+go-to: root
 
 GLORK! 1
 
 @prez2
 title: Bill: Trip into missile gap and become unresponsive
 subtitle: Many such cases!
-goto: root
+go-to: root
 
 GLORK! 2
 
 @prez3
 title: Bill: Re-classify International Food Court as thought-terrorist organization
 subtitle: This is the <span style="color: #00FF00;">**CORRECT**</span> choice! Eat and enjoy. Eat and enjoy. Eat and enjoy
-goto: root
+go-to: root
 
 GLORK! 3
