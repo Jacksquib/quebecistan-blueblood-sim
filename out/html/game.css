@@ -108,6 +108,7 @@ body {
 	padding: 0 20px 20px 20px;
 	background-color: #000034;
 	position: absolute;
+	position: top 0px;
 	min-height: 1000px;
 }
 
@@ -115,7 +116,7 @@ body {
 
 /* Content */
 #slide {
-  background: #000;
+  background: #000034;
   padding: 7px 0;
 	font-weight: bold;
 	font-size: 14px;
@@ -133,9 +134,9 @@ body {
 	word-break: break-word;
   border-left: 8px #000 solid;
 	margin-bottom: 8px !important;
-	background-color: #000034;
+	background-color: #000;
   color: #fff;
-	min-height: 1000px;
+	min-height: 300px;
 }
 #content {
   font-size: 12px;
@@ -153,6 +154,7 @@ body {
 }
 #tools_wrapper {
 	position: absolute;
+	display: table;
   top: 126px;
   left: 0;
   bottom: 130px;
