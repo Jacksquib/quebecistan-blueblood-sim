@@ -1,6 +1,5 @@
 :root {
-  --littleguys: url("https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/prezLilGuys.gif");
-  --banner: url("https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/prezLilTitle.gif");
+  --banner: url("img/preztest/prezVidyaTitle.gif");
 }
 a {
     color: #0000ff !important;
@@ -173,7 +172,7 @@ body {
 	padding: 0;
 	background-color: #000034;
 	position: relative !important;
-	height: 100vh;
+	height: 100vh + 100px;
 }
 
 
