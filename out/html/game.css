@@ -3,91 +3,208 @@
   --banner: url("https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/prezLilTitle.gif");
 }
 
-body {
-	--bg-color: #000034;
-	--border-color: #fff;
-	--content-bg-color: #000;
-	--text-color: #fff;
-	--link-color: #FF0;
-	--link-hover-color: rgba(0, 0, 0, 0.05);
-	--unavailable-bg-color: rgba(0, 0, 0, 0.1);
-	--unavailable-color: #5E5E5E;
-	--tab-bg-color: #dedede;
-	--tab-color: #404040;
-	--tab-hover-color: #1A1A1A;
-	--card-border-color: #00F;
-	--card-bg-color: #FF0;
-	line-height: 155%;
-	margin: 0;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 12px;
-	overflow-y: scroll;
-	color: #fff;
-	background-color: var(--bg-color);
-	background-image: url("https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/prezBackground.gif");
+a {
+    color: #0000ff !important;
 }
 
-#main {
-	width: 950px;
-	margin: 0 auto;
-	padding: 0;
-	background-color: #c6c6c6;
-	background-color: var(--bg-color);
-	background-color: transparent;
-}
+/* Header */
 
-#main::before {
-	content: "";
-	display: block;
-	background: var(--bg-color);
+#page:before {
+  content: "";
+  display: block;
+  background: #000034;
 	background-position-x: 0%;
 	background-position-y: 0%;
-	background-repeat: repeat;
-	background-image: none;
-	border-bottom: solid 10px #ffff00;
-	height: 100px;
-	background-image: var(--banner);
+  border-bottom: solid 10px #ffff00;
+  height: 100px;
+  background-image: var(--banner);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  padding-top: 0 !important; 
+  background-color: #5a5a5a;
+	font-family: "arial";
+	font-weight: bold;
+	font-size: x-small;
+	text-align: center;
+	height: 15px;
+	padding: 2px;
+	text-transform: uppercase;
+	color: #00f;
+}
+
+nav * {
+	vertical-align: middle;
+  background-color: #000;
+}
+
+.heart {
+  background-image: url("https://homestuck.com/logosAndAds/candycorn.gif") !important;
+  image-rendering: auto;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 6px;
+	padding: 0 !important;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-header, #content, footer {
-  color: var(--text-color);
-  max-width: 540px;
-  margin: 0 auto;
-  overflow: auto;
+/* body */
+
+body {
+	/*
+	normal
+	--bg-color: #f3f3e3;
+  --border-color: #000;
+  --content-bg-color: #f3f3f3;
+  --text-color: #431;
+  --link-color: #900;
+  --link-hover-color: rgba(0, 0, 0, 0.05);
+  --unavailable-bg-color: rgba(0, 0, 0, 0.1);
+  --unavailable-color: #999;
+  --tab-bg-color: #dedede;
+  --tab-color: #ddd;
+  --tab-hover-color: #ececec;
+  --card-border-color: #ccc;
+  --card-bg-color: #ddd;
+	dark mode
+	--bg-color: #000;
+  --border-color: #fff;
+  --content-bg-color: #242424;
+  --text-color: #efefef;
+  --link-color: #ff8080;
+  --link-hover-color: rgba(255, 255, 255, 0.06);
+  --tab-bg-color: #555555;
+  --tab-color: #505050;
+  --tab-hover-color: #242424;
+  --card-border-color: #4c4c4c;
+  --card-bg-color: #3f3f3f;
+	*/
+	--bg-color: #000034;
+  --border-color: #000;
+  --content-bg-color: #000034;
+  --text-color: #fff;
+  --link-color: #0000ff;
+  --link-hover-color: rgba(0, 0, 0, 0.05);
+  --unavailable-bg-color: rgba(0, 0, 0, 0.1);
+  --unavailable-color: #999;
+  --tab-bg-color: #dedede;
+  --tab-color: #ddd;
+  --tab-hover-color: #ececec;
+  --card-border-color: #ccc;
+  --card-bg-color: #ddd;
+	margin: 0;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	overflow-y: scroll;
+	background-image: url("https://file.garden/aAUSRxm2KRQR_iG2/prezstuck/prezBackground.gif");
+}
+#page {
+  width: 940px;
+	margin: 0 auto;
+	padding: 0 5px 5px 5px;
+	background-color: #000034;
+	position: relative !important;
 }
 
+
+
+/* Content */
 #container {
+  background: #000034;
+  padding: 7px 0;
 	font-weight: bold;
 	font-size: 14px;
-	padding: 7px 0;
+	width: 676px;
+  margin-left: auto;
 }
-
 #slide {
+  margin: 0 auto 20px;
 	display: table;
-	width: 600px;
 	max-width: 940px;
-	margin: 0 auto 20px;
 	padding: 0 25px;
 	word-wrap: break-word;
 	word-break: break-word;
-	background-color: #eeeeee;
+	width: unset;
+  border-left: 8px #000 solid;
+	margin-bottom: 8px !important;
+	background-color: #000;
+  color: #fff !important;
 }
-
 #content {
+  font-size: 12px;
 	text-align: center;
 	margin-bottom: 14px;
-	font-size: 12px;
+  background-color: var(--content-bg-color);
 }
-
 #content>span>br:first-child {
 	display: none;
 }
-
 #content img {
+  margin-bottom: -2.5px !important;
 	max-width: 940px;
-	margin-bottom: -2.5px !important;
+}
+
+
+
+/* bottom */
+footer {
+  margin-top: 1em;
+  font-size: 0.8em;
+  position: relative;
+}
+footer a {
+  padding-right: 1em;
+}
+
+
+
+/* mspfa stuff ??? */
+#dialog {
+	position: fixed;
+	min-width: 280px;
+	max-width: 880px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 1;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	border: 1px solid #a9a9a9;
+	background-color: #eeeeee;
+}
+
+#dialog>div:nth-child(1) {
+	padding: 8px;
+	background-color: #dddddd;
+}
+
+#dialog>div:nth-child(2) {
+	padding: 12px;
+}
+
+#dialog>div:nth-child(3) {
+	padding: 8px;
+	text-align: right;
+}
+
+.spoiler {
+	border: 1px dashed gray;
+	padding: 1px;
+}
+
+.spoiler>div:last-child {
+	margin: 12px 5%;
+	padding: 3px;
+	text-align: left;
+}
+
+.spoiler.closed>div:last-child {
+	display: none;
 }
 
 #content img.major,
@@ -99,47 +216,13 @@ header, #content, footer {
 	margin: 0 -25px;
 }
 
-footer {
-  margin-top: 1em;
-  font-size: 0.8em;
-  position: relative;
+#slide .spoiler img {
+	max-width: 100%;
 }
 
-footer a {
-  padding-right: 1em;
-}
 
-header {
-  text-align: right
-}
 
-#header-links {
-  text-align: left;
-  float: left;
-  display: inline-block;
-  margin-bottom: 0.5em;
-  padding-left: 1em;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  background-color: var(--bg-color);
-}
-#header-links a {
-  padding-right: 1em;
-}
-header h1, header h2 {
-  display: inline-block;
-  font-weight: normal;
-  margin: 0;
-  font-size: 1em;
-}
-header h1 {
-  font-weight: bold;
-}
-header h2:before {
-  content: "by";
-  font-style: italic;
-  padding: 0 0.3em 0 0;
-}
-
+/* dendry text stuff */
 #content #read-marker {
   border: none;
   border-top: 1px solid var(--border-color);
@@ -216,37 +299,6 @@ blockquote.attribution {
 blockquote + blockquote.attribution {
   margin-top: -1em;
 }
-/* This is mostly copied from undum. */
-#mid_panel {
-  margin: 0 16rem;
-}
-#page {
-  margin: 0 auto;
-  position: relative;
-}
-#tools_wrapper {
-  position: absolute;
-  width: 100%;
-  max-width: 69em;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.tools {
-  padding: 0.6em;
-  width: 14rem;
-  color: var(--text-color);
-  background-color: var(--content-bg-color);
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-.tools.left {
-  float: left;
-  left: 0.4em;
-}
-.tools.right {
-  float: right;
-  right: 0.4em;
-}
 #qualities {
   text-indent: 0;
   line-height: 1.3em;
@@ -268,12 +320,10 @@ blockquote + blockquote.attribution {
 }
 
 
+
 /* tabs */
 .tab_container {
     background-color: var(--tab-bg-color);
-    margin-top: -0.6em;
-    margin-left: -0.6em;
-    margin-right: -0.6em;
 }
 .tab_button {
     font-family: "Courier New", Courier, monospace;
@@ -292,6 +342,8 @@ blockquote + blockquote.attribution {
 }
 
 
+
+/* save */
 .overlay {
     background: rgba(0,0,0,0.7);
     display: none;
@@ -319,30 +371,10 @@ blockquote + blockquote.attribution {
 .save_info {
     min-width: 10em;
 }
-.background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--bg-color);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-}
 /*
  * This is used for overlaying transparencies
  * only transition on fade-in
  * */
-#bg2 {
-    z-index: -100;
-}
-#bg1 {
-    z-index: -99;
-}
 .b {
 }
 .save_button {
@@ -350,11 +382,9 @@ blockquote + blockquote.attribution {
 .delete_button {
 }
 
-/*
- * Card stuff for dendrynexus
- * 
- */
 
+
+/* Card stuff for dendrynexus */
 ul.decks, ul.hand, ul.pinned-cards {
   list-style: none;
   padding-left: 0;
@@ -458,94 +488,7 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
   object-fit: cover;
 }
 
-/*
- * sprite stuff- feel free to comment out/remove if not using
- */
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-#contentSpriteContainer {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  max-width: 62em;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: -97;
-}
-.sprite {
-    position: absolute;
-    width: 180px;
-}
-#topLeftSprite {
-    float: left;
-    top: -1em;
-    left: 0.4em;
-}
-#topRightSprite {
-    float: right;
-    top: -1em;
-    right: 0.4em;
-}
-#bottomLeftSprite {
-    float: left;
-    left: 0.4em;
-    top: 50%;
-}
-#bottomRightSprite {
-    float: right;
-    right: 0.4em;
-    top: 50%;
-}
-
-/* smaller screens: hide left margin */
-@media screen and (max-width: 1200px) {
-  .tools {
-      margin-right: 0.4em;
-      margin-left: 0.4em;
-  }
-  #mid_panel {
-      margin-right: 0.4em;
-  }
-}
-/* mobile: move the stat box to the top if the screen is too small,
- * and reduce font size slightly. */
-@media screen and (max-width: 560px) {
-  #page {
-      position: static;
-  }
-  #content {
-      position: static;
-      font-size: 1em;
-      line-height: 160%;
-      padding: 1em 1em 1.5em 1em;
-  }
-  #qualities {
-      font-size: 1em;
-  }
-  #tools_wrapper {
-    position: static;
-  }
-  .tools {
-      width: 90%;
-      margin: 2em 0 1em 0;
-      margin: 0.4em;
-  }
-  .tools.left {
-      float: none;
-      left: 0;
-  }
-  .tools.right {
-      float: none;
-      right: 0;
-  }
-  #mid_panel {
-      margin: 0 auto;
-  }
-
-  /* cards are smaller on mobile */
+/* cards are smaller on mobile */
   .card-img {
     height: 125px;
     width: 100px;

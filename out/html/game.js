@@ -18,14 +18,6 @@
 
   var TITLE = "Québecistan Blueblood Sim" + '_' + "Jacksquib";
 
-  window.showStats = function() {
-    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('library')) {
-        window.dendryUI.dendryEngine.goToScene('backSpecialScene');
-    } else {
-        window.dendryUI.dendryEngine.goToScene('library');
-    }
-  };
-
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
   window.displayText = function(text) {
