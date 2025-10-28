@@ -84,18 +84,18 @@ body {
   --card-bg-color: #3f3f3f;
 	*/
 	--bg-color: #000034;
-  --border-color: #000;
+  --border-color: #000034;
   --content-bg-color: #000034;
   --text-color: #fff;
   --link-color: #0000ff;
-  --link-hover-color: rgba(0, 0, 0, 0.05);
+  --link-hover-color: rgba(255, 255, 255, 0.06);
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
   --unavailable-color: #999;
-  --tab-bg-color: #dedede;
-  --tab-color: #ddd;
-  --tab-hover-color: #ececec;
-  --card-border-color: #ccc;
-  --card-bg-color: #ddd;
+  --tab-bg-color: #555555;
+  --tab-color: #505050;
+  --tab-hover-color: #242424;
+  --card-border-color: #4c4c4c;
+  --card-bg-color: #3f3f3f;
 	margin: 0;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 12px;
@@ -113,7 +113,7 @@ body {
 
 
 /* Content */
-#container {
+#slide {
   background: #000034;
   padding: 7px 0;
 	font-weight: bold;
@@ -121,18 +121,18 @@ body {
 	width: 676px;
   margin-left: auto;
 }
-#slide {
+#container {
   margin: 0 auto 20px;
 	display: table;
-	max-width: 940px;
+	width: 676px;
+	max-width: 676px;
 	padding: 0 25px;
 	word-wrap: break-word;
 	word-break: break-word;
-	width: unset;
   border-left: 8px #000 solid;
 	margin-bottom: 8px !important;
 	background-color: #000;
-  color: #fff !important;
+  color: #fff;
 }
 #content {
   font-size: 12px;
@@ -147,8 +147,15 @@ body {
   margin-bottom: -2.5px !important;
 	max-width: 940px;
 }
-
-
+#tools_wrapper {
+	position: absolute;
+  top: 126px;
+  left: 0;
+  bottom: 130px;
+  width: 250px;
+	background-color: #000;
+  border: solid #000;
+}
 
 /* bottom */
 footer {
