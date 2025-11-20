@@ -259,6 +259,8 @@ footer a {
 .emoji {
     height: 1.7em;
     vertical-align: bottom;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
 }
 .tooltiptext {
     position: absolute;
