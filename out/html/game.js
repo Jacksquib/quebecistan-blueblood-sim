@@ -16,29 +16,22 @@
     // Add your custom code here.
   };
 	
-	
+  var TITLE = "Québecistan Blueblood Sim" + '_' + "Jacksquib";
 	
 	//emojiparser... please...!
 	var parserRules = [
 		//BillClinton test.
-		{ pattern: /\@\!BillClinton\!\@/g, replacement: '<span class="tooltip"><img src="img/emojicool/BillClinton.gif" class="emoji emoji-BillClinton" /><span class="tooltiptext">BillClinton</span></span>' },
-		{ pattern: /\@\!CillBlinton\!\@/g, replacement: '<span class="tooltip"><img src="img/emojicool/BillClinton.gif" class="emoji emoji-BillClinton" /><span class="tooltiptext">BillClinton</span></span>' }
+		{ pattern: /\@\!BillClinton\!\@/gi, replacement: '<span class="tooltip"><img src="img/emojicool/BillClinton.gif" class="emoji emoji-BillClinton" /><span class="tooltiptext">BillClinton</span></span>' },
+		{ pattern: /\@\!CillBlinton\!\@/gi, replacement: '<span class="tooltip"><img src="img/emojicool/BillClinton.gif" class="emoji emoji-BillClinton" /><span class="tooltiptext">BillClinton</span></span>' }
 	];
-	document.querySelectorAll('#content').forEach(function(tag) {
-		var inner = tag.innerHTML;
-		parserRules.forEach(function(rule) {
-			inner = inner.replace(rule.pattern, rule.replacement)
-		});
-		tag.innerHTML = inner;
-	});
 	
-	
-  var TITLE = "Québecistan Blueblood Sim" + '_' + "Jacksquib";
-
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
   window.displayText = function(text) {
-      return text;
+		parserRules.forEach(function(rule) {
+			text = text.replace(rule.pattern, rule.replacement)
+		});
+		return text;
   };
 
   // This function allows you to do something in response to signals.
