@@ -15,7 +15,24 @@
 
     // Add your custom code here.
   };
-
+	
+	
+	
+	//emojiparser... please...!
+	var parserRules = [
+		//BillClinton test.
+		{ pattern: /\@\!BillClinton\!\@/g, replacement: '<span class="tooltip"><img src="img/emojicool/BillClinton.gif" class="emoji emoji-BillClinton" /><span class="tooltiptext">BillClinton</span></span>' },
+		{ pattern: /\@\!CillBlinton\!\@/g, replacement: '<span class="tooltip"><img src="img/emojicool/BillClinton.gif" class="emoji emoji-BillClinton" /><span class="tooltiptext">BillClinton</span></span>' }
+	];
+	document.querySelectorAll('#content').forEach(function(tag) {
+		var inner = tag.innerHTML;
+		parserRules.forEach(function(rule) {
+			inner = inner.replace(rule.pattern, rule.replacement)
+		});
+		tag.innerHTML = inner;
+	});
+	
+	
   var TITLE = "Québecistan Blueblood Sim" + '_' + "Jacksquib";
 
   // This function allows you to modify the text before it's displayed.
